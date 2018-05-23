@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Products</title>
+
+  <meta http-equiv="content-type" 
+    content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript" src="ajax_get_lib.js"></script>
+    <script type="text/javascript" src="ajax_populate_page.js"></script>
+    <script type="text/javascript" src="shopping_cart.js"></script>  
+    <script type="text/javascript" src="jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>     
+       <script type="text/javascript" src="orderonline.js"></script>   
+    <style>
+
+img {
+  padding: 10px;
+    } 
+#logo{
+    width: 50px;
+    height:auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+table{
+ 
+  
+     border: 10px solid white;
+    margin-left: auto;
+    margin-right: auto;
+     border-collapse: collapse;
+ 
+}
+tr { border: solid thin grey; }
+#front{
+  border: 10px solid white;
+    margin-left: auto;
+    margin-right: auto;
+     border-collapse: collapse;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+     text-align: center;
+
+}
+#frontoffer{
+ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+ color: red;
+    font-size: 40px;
+}
+ #atc {
+        font-style: italic;
+        font-weight: bold;
+        color: green;
+        display: none;
+        margin-left: 50px;
+        }
+}
+}
+#itemName{
+    color:#4d0000;
+     font-size: 18px;
+}
+#cat{
+  color:grey;
+   font-size: 10px;
+}
+#cost{
+  color:blacks;
+   font-size: 15px;
+}
+#itemdetail{
+  width:900px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+#lngdisc{
+  font-size:12px;
+   color:grey;
+}
+</style>
+</head>
+
+<body>
+    <header>
+                 <img id="logo" src="indeximage/logo.png"
+        alt="logo" /> 
+        <h1 id="heading">Bertha's Delux Chocolates</h1>
+    </header>
+     <div class="ui-widget">
+    <div class="ui-widget-header">
+
+   <a href="orderonline.html">
+    <div id="counter"><img src="indeximage/cart.png" alt="cart icon" width= "40px"/><span id="count">0</span></div></a>
+    </div></div>
+      <div class="navig">
+                       <a href="index.html">Home</a>
+                       <a href="products.html">Products</a>
+                       <a href="orderonline.html">Order Online</a>
+                       <a href="index.html#about">About Us</a>
+                       <a href="index.html#contact">Contact</a>
+                     </div>
+                   <div>
+ <input type="button" value="All" id="all" />
+ <input type="button" value="Milk Chocolate" id="milk" />
+<input type="button" value="Dark Chocolate" id="dark" /> 
+<input type="button" value="Nuts and Chews" id="nuts" />
+<input type="button" value="Brittles and toffies" id="brittle" />
+ <input type="button" value="Truffles" id="truffle" />
+  <input type="button" value="Gifts" id="gift" />
+   <input type="button" value="Holiday Assortments" id="holiday" />
+ <hr />         
+      <hr />
+ <div id="content">
+ </div>    
+</body>
+</html>    

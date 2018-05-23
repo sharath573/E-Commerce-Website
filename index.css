@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    /*Sharath Chandra Kumar_ RedID:822062066_ jadrn046*/
+ul{
+    display: list-item;
+    margin-left: 20px;
+    list-style-type: circle;
+
+}
+html {
+   
+    height: auto;
+    width: auto;
+    }
+body {
+    background-color: #FFE4B5;
+    height: auto;
+    width: auto;
+    } 
+header {
+    background-color: #4d0000;
+}
+#heading{
+text-align: center;
+ font-family: "Great Vibes", cursive;
+color: #d54d7b;
+font-size: 50px;
+font-weight: normal;
+text-shadow: 0 1px 1px #fff;
+position 
+}
+#about, #contact{
+    padding-left: 10px;
+  font-family: "Great Vibes", cursive;   
+  color: #d54d7b;
+  text-shadow: 0 1px 1px #fff;
+}
+p{
+    font-family: "Great Vibes", cursive; 
+    padding: 20px;
+   
+}
+#footer {
+    position: relative;
+    bottom: 0px;
+    background-color: #4d0000;
+    width: 100%;
+    padding-top: 40px;
+   bottom: 0px;
+   color:white;
+    text-align: center;
+}
+#footpic{
+    width:20px;
+}
+#foot1{
+    font-size: 20px;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+     color: #cc3f3f;
+}
+#foot2{
+    font-size: 15px;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+     color: #a31818;
+}
+
+#logo{
+
+    width: 150px;
+    height:auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#img1{
+    width: 800px;
+    height: auto;
+    padding: 40px;
+    display: block;
+    margin: 0 auto;
+
+}
+#contactpic{
+    width: 500px;
+    height: auto;
+    padding: 40px;
+    display: block;
+    margin: 0 auto;
+    }
+li{
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+b {
+    font-size: 20px;
+}
+.navig {
+    background-color: rgb(5,5,5);
+    overflow: hidden;
+    align-items: center;
+}
+.navig a {
+    float: left;
+    text-decoration: none;
+    display: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 17px;
+}
+.navig a:hover {
+    background-color: #4d0000;
+    color: #FFE4B5;
+}
+.navig a:active {
+    background-color: black;
+    color: white;
+}
+ .navig b {
+    float: right;
+    text-decoration: none;
+    display: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    
+    font-size: 17px;
+}   
+#main {
+    background-color: #FFE4B5 !important;
+    background-image: none;
+    padding: 15px;
+    } 
+    
+#cart table {
+    margin-left: auto;
+    margin-right: auto;
+    }    
+    
+#cart th, td {
+    background-color: white;
+    padding: 5px 20px 5px 20px;
+    }
+    
+#counter {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: normal;
+    font-size: 80%;
+    color: white;
+    float:right;
+    }            
+

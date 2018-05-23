@@ -1,0 +1,260 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Order Online</title>
+	 <meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" /> 
+ <meta http-equiv="Content-Style-Type" content="text/css" />
+         
+     <link rel="stylesheet" type="text/css" 
+    href="index.css" />  
+    <link rel="stylesheet" type="text/css" 
+    href="jquery-ui-1.10.2.custom/css/custom-theme/jquery-ui-1.10.2.custom.min.css" />          
+
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>     
+    <script type="text/javascript" src="shopping_cart.js"></script>
+    <script type="text/javascript" src="orderonline.js"></script>    
+    <style>
+    #logo{
+    width: 50px;
+    height:auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+#order_button {
+    background-color: #4d0000;
+    border-color: #cc0000;
+    border-radius: 2px; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:right;
+    position:fixed;
+    bottom:60px;
+    right:20px;
+}
+#ordersummary{
+    height:200px;
+    width:200px;
+    float: right;
+    position:fixed;
+    right:20px;
+    top:200px;
+    text-align: left;
+    padding:10px;
+    background-color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border-style: double;
+   
+}
+#summary{
+     text-align: center;
+   font-style: bold;
+   border-color:#4d0000;
+   border-width: 10px; 
+}
+#carttable{
+    border-radius: 20px;
+    border-color: white;
+    background-color: blue;
+    border-bottom: solid grey;
+     
+     border: 10px solid white;
+    margin-left: auto;
+    margin-right: auto;
+     border-collapse: collapse;
+      font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  padding-right: 10px;
+  text-align: center;
+}
+tr{
+   border-radius: 20px;
+   border: solid thin grey; 
+}
+
+#deleteButton{
+      background-color: white;
+   background: transparent;
+    box-shadow: transparent;
+    border-color: transparent;
+    color: grey;
+    padding: 2px 3px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;  
+}
+select{
+    transition-delay: 19s;
+}
+</style>
+</head>
+
+
+<body>
+    
+   <header>
+		      <img id="logo" src="indeximage/logo.png"
+        alt="logo" />
+        <h1 id="heading">Bertha's Delux Chocolates</h1>
+
+    </header> 
+     <div class="ui-widget">
+    <div class="ui-widget-header">
+
+    <a href="orderonline.html">
+    <div id="counter"><img src="indeximage/cart.png" alt="cart icon" width= "40px"/><span id="count">0</span></div></a></div></div>
+      <div class="navig">
+                       <a href="index.html">Home</a>
+                       <a href="products.html">Products</a>
+                       <a href="orderonline.html">Order Online</a>
+                       <a href="index.html#about">About Us</a>
+                       <a href="index.html#contact">Contact</a>
+         </div> 
+
+ 
+    
+    <div id="main" class="ui-widget-content">    
+      
+                    
+    	       
+        <div id="cart"></div>
+       <input type="button" value="Proceed to Checkout" id="order_button" />  
+    </div>  
+
+<div id="dialog-modal" class="widget-dialog-container" title="Complete Your Order">
+<form method="post" action="/perl/jadrn046/read_cookie.cgi">    
+    <table>
+        <tr> 
+            <th> Shipping Address</th>
+            <th></th>
+             <th> Billing Address</th>
+             <th></th>
+        </tr>
+        <tr>
+            <td> First Name:</td>
+            <td><input type="text" name="name" size="20" placeholder="First Name"/></td>
+            <td> First Name:</td>
+            <td><input type="text" name="name2" size="20" placeholder="First Name"/></td>
+        </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lname" size="20" placeholder="Last Name"/></td>
+            <td>Last Name:</td>
+            <td><input type="text" name="lname2" size="20" placeholder="Last Name"/></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><Input type="text" name="address11" size="20" placeholder="Address line 1" /></td>
+            <td>Address:</td>
+            <td><Input type="text" name="address21" size="20" placeholder="Address line 2"/></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td><Input type="text" name="address12" size="20" placeholder="Address line 2" /></td>
+            <td></td>
+            <td><Input type="text" name="address22" size="20" placeholder="Address line 2"/></td> 
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><Input type="text" name="city" size="20" placeholder="City"/></td>
+            <td>City:</td>
+            <td><Input type="text" name="city2" size="20" placeholder="City"/></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><Input type="text" name="state" size="2" placeholder="XX"/></td>
+            <td>State:</td>
+            <td><Input type="text" name="state2" size="2" placeholder="XX"/></td>
+        </tr>
+        <tr>
+            <td>Zip:</td>
+            <td><Input type="text" name="zip" size="5" placeholder="12345" /></td> 
+            <td>Zip:</td>
+            <td><Input type="text" name="zip2" size="5" placeholder="12345"/></td>            
+        </tr> 
+          <tr>
+            <td>Phone number:  +1 </td>
+            <td><Input type="text" name="phnumber" size="10" maxlength="10" placeholder="XXXXXXXXXX"/></td>
+            <td>Phone number:  +1 </td>
+            <td><Input type="text" name="phnumber2" size="10" maxlength="10" placeholder="XXXXXXXXXX"/></td>
+        </tr>
+        <tr>
+          <td>Card Type:</td>
+            <td><select name="creditcard">
+                                             <option value="0">Visa</option>
+                                             <option value="1">American Express</option>
+                                             <option value="2">Discover</option>
+                                             <option value="3">Mastercard</option>
+            </select></td>
+            <td></td>
+            <td></td>
+        </tr>
+      
+        <tr>
+            <td>Credit Card: </td>
+            <td><Input type="text" name="ccnumber" size="18" maxlength="16" placeholder="XXXXXXXXXXXXXXXX"/></td>
+             <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td>Expiration:</td>
+            <td>Month:<input type="text" name="exp11" size="2" maxlength="2" placeholder="MM" /></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td>Year:<input type="text" name="exp12" size="4" maxlength="4" placeholder="YYYY" /></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+         <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Same as Shipping Address <input type="checkbox" name="same_address" id="sameadd" /></td>
+            
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+         
+        <tr>
+            <td></td>
+            <td><input type="reset" /></td>
+            <td></td>
+            <td><input type="submit" class="ui-button" value="Submit Order"/></td>
+        </tr>       
+    </table> 
+</form>       
+</div> 
+</div>
+
+<footer id="footer">
+            <a>&copy; Sharath Chandra Kumar Periketi | RedID: 822062066 | jadrn046</a>
+            
+ </footer>  
+ </body>
+</html>

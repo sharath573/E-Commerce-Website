@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    /*Sharath Chandra Kumar_ RedID:822062066_ jadrn046*/
+ul{
+    display: list-item;
+    margin-left: 20px;
+    list-style-type: circle;
+
+}
+html {
+   
+    height: auto;
+    width: auto;
+    }
+body {
+    background-color: #FFE4B5;
+    height: auto;
+    width: auto;
+    } 
+header {
+    background-color: #4d0000;
+     height: auto;
+    width: auto;
+}
+#heading{
+text-align: center;
+ font-family: "Great Vibes", cursive;
+color: #d54d7b;
+font-size: 50px;
+font-weight: normal;
+text-shadow: 0 1px 1px #fff;
+position 
+}
+img {
+  padding: 10px;
+    } 
+#logo{
+    width: 50px;
+    height:auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+table{
+ 
+  
+     border: 10px solid white;
+    margin-left: auto;
+    margin-right: auto;
+     border-collapse: collapse;
+ 
+}
+tr { border: solid thin grey; }
+#front{
+  border: 10px solid white;
+    margin-left: auto;
+    margin-right: auto;
+     border-collapse: collapse;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+     text-align: center;
+
+}
+#frontoffer{
+ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+ color: red;
+    font-size: 40px;
+}
+ #atc {
+        font-style: italic;
+        font-weight: bold;
+        color: green;
+        display: none;
+        margin-left: 50px;
+        }
+}
+}
+#itemName{
+    color:#4d0000;
+     font-size: 18px;
+}
+#cat{
+  color:grey;
+   font-size: 10px;
+}
+#cost{
+  color:blacks;
+   font-size: 15px;
+}
+#itemdetail{
+  width:900px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+#lngdisc{
+  font-size:12px;
+   color:grey;
+}
+footer{
+  position: fixed;
+     padding-bottom: 0px;
+    bottom: 0px;
+    background-color: #4d0000;
+    width: 100%;
+    padding-top: 40px;
+   bottom: 0px;
+   color:white;
+    text-align: center;
+}
+.navig a {
+    float: left;
+    text-decoration: none;
+    display: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 17px;
+}
+.navig a:hover {
+    background-color: #4d0000;
+    color: #FFE4B5;
+}
+.navig a:active {
+    background-color: black;
+    color: white;
+}
+ .navig b {
+    float: right;
+    text-decoration: none;
+    display: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    
+    font-size: 17px;
+}   
